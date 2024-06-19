@@ -1,10 +1,11 @@
 export default function ResumePage() {
     const downloadFile = () => {
-        const fileUrl = `https://docs.google.com/document/d/1MijPWBE1iIAroY32SUJrDgWU8hUiU6BEAWG1IwkPU1I/edit?usp=sharing`
         const link = document.createElement('a');
-        link.href = fileUrl;
-        link.download = 'dFreemanResume.pdf';
+        link.href = '../public/dFreemanresume.pdf';
+        link.download = 'dFreemanresume.pdf';
+        document.body.appendChild(link);
         link.click();
+        document.body.removeChild(link);
     };
 
     return (
