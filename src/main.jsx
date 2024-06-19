@@ -5,11 +5,11 @@ import './index.css';
 
 // Import the pages
 import App from './App';
-import ErrorPage from './ErrorPage';
-import AboutPage from './AboutPage';
-import ContactPage from './ContactPage';
-import ResumePage from './ResumePage';
-import PortfolioPage from './PortfolioPage';
+import ErrorPage from './pages/ErrorPage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import ResumePage from './pages/ResumePage';
+import PortfolioPage from './pages/PortfolioPage';
 
 //define the routes
 const router = createBrowserRouter([
