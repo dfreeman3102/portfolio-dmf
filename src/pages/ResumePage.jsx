@@ -1,6 +1,4 @@
-import React from 'react';
-
-function ResumePage() {
+export default function ResumePage() {
     const downloadFile = () => {
         const fileUrl = `https://docs.google.com/document/d/1MijPWBE1iIAroY32SUJrDgWU8hUiU6BEAWG1IwkPU1I/edit?usp=sharing`
         const link = document.createElement('a');
@@ -28,5 +26,3 @@ function ResumePage() {
         </div>
     );
 }
-
-export default ResumePage;
