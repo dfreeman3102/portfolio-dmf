@@ -1,29 +1,32 @@
+import "../styles/resume.css";
 export default function ResumePage() {
-    const downloadFile = () => {
-        const link = document.createElement('a');
-        link.href = '../public/dFreemanresume.pdf';
-        link.download = 'dFreemanresume.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+  const downloadFile = () => {
+    const link = document.createElement("a");
+    link.href = "../public/dFreemanresume.pdf";
+    link.download = "dFreemanresume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
-    return (
-        <div>
-            <h1>Resume and Proficiencies</h1>
-            <button onClick={downloadFile}>Download my Resume Here!</button>
+  return (
+    <div>
+     
+      <button className="btn btn-primary fs-4" onClick={downloadFile}>
+        Download my Resume Here!
+      </button>
 
-            <h2>Proficiencies</h2>
-            <ul>
-                <li>Node.js</li>
-                <li>React</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-                <li>SQL</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-        </div>
-    );
+      <h2>Proficiencies</h2>
+      <ul className="list-group list-group-flush">
+        <li className="list-group-item fs-3 ">Node.js</li>
+        <li className="list-group-item fs-3 ">React</li>
+        <li className="list-group-item fs-3 ">Express</li>
+        <li className="list-group-item fs-3 ">MongoDB</li>
+        <li className="list-group-item fs-3 ">SQL</li>
+        <li className="list-group-item fs-3 ">JavaScript</li>
+        <li className="list-group-item fs-3 ">HTML</li>
+        <li className="list-group-item fs-3 ">CSS</li>
+      </ul>
+    </div>
+  );
 }

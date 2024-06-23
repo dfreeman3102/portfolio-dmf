@@ -26,7 +26,7 @@ export default function ContactPage() {
                 <input
                     type="text"
                     id="name"
-                    className='form-control'
+                    className='form-control fs-1'
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
@@ -35,7 +35,7 @@ export default function ContactPage() {
                 <input
                     type="email"
                     id="email"
-                    className='form-control'
+                    className='form-control fs-3'
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
@@ -44,11 +44,11 @@ export default function ContactPage() {
                 <textarea
                     id="message"
                     value={message}
-                    className='form-control'
+                    className='form-control fs-3'
                     onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
 
-                <button className='btn btn-dark'type="submit">Submit</button>
+                <button className='btn btn-dark fs-3'type="submit">Submit</button>
             </form>
         </div>
     );
