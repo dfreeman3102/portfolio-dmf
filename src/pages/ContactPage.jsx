@@ -7,9 +7,12 @@ export default function ContactPage() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
-        console.log('Form submitted:', { name, email, message
-        });
+        // Handle form submission logic
+        if (!name || !email || !message) {
+            alert('All fields are required!');
+            return;
+        }
+        alert('Contact Info and Message Sent!');
         setName('');
         setEmail('');
         setMessage('');
@@ -17,12 +20,13 @@ export default function ContactPage() {
 
     return (
         <div>
-            <h1>Contact Page</h1>
+            <h2>Contact Me</h2>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name:</label>
                 <input
                     type="text"
                     id="name"
+                    className='form-control'
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
@@ -31,6 +35,7 @@ export default function ContactPage() {
                 <input
                     type="email"
                     id="email"
+                    className='form-control'
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
@@ -39,10 +44,11 @@ export default function ContactPage() {
                 <textarea
                     id="message"
                     value={message}
+                    className='form-control'
                     onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
 
-                <button type="submit">Submit</button>
+                <button className='btn btn-dark'type="submit">Submit</button>
             </form>
         </div>
     );
