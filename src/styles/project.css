@@ -1,0 +1,14 @@
+.img-thumbnail {
+    width: 100%;
+    margin-right: 20px;
+}
+h3{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.5rem;
+}
+button{
+    font-size: 1.5rem;
+    margin: 20px;
+}

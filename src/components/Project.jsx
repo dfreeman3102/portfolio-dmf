@@ -1,3 +1,4 @@
+import '../styles/project.css';
 export default function Project() {
     const projectInfo = [
         {
@@ -10,7 +11,7 @@ export default function Project() {
         },
         {
           title: "Five Dudes Pizza",
-          description: "A front-end application for a 'pizza restaurant'. Users can view the calendar on the homepage for their closed holidays, their about page, the menu and place an order.",
+          description: "A front-end application for a 'pizza restaurant'. Users can view the menu, add items to their cart, and place an order through a user-friendly interface. The application ensures smooth handling of data with local storage and provides a seamless user experience.",
           imageUrl: "./images/five-dudes-pizza.png",
           projectUrl: "https://dfreeman3102.github.io/five-dudes-pizza/",
           repoUrl: "https://github.com/dfreeman3102/five-dudes-pizza",
@@ -49,14 +50,14 @@ export default function Project() {
           {projectInfo.map((project, index) => (
             <div key={index}>
               <h3>{project.title}</h3>
+              <img src={project.imageUrl} className='img-thumbnail' alt={project.title} />
               <p>{project.description}</p>
-              <img src={project.imageUrl} alt={project.title} />
-              <div>
-                <a href={project.projectUrl}>View Project</a>
-              </div>
-              <div>
-                <a href={project.repoUrl}>View Repository</a>
-              </div>
+              <button className='btn btn-dark'>
+                <a className='link-light' href={project.projectUrl}>View Project</a>
+              </button>
+              <button className='btn btn-dark'>
+                <a className='link-light' href={project.repoUrl}>View Repository</a>
+              </button>
             </div>
           ))}
         </div>
