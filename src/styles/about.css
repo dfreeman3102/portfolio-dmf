@@ -15,7 +15,7 @@ h2{
     padding-right: 25%;
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 375px){
     img{
         width: 100%;
         border-radius: 25%;
