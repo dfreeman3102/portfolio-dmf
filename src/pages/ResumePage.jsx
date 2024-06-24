@@ -1,4 +1,3 @@
-import "../styles/resume.css";
 export default function ResumePage() {
   const downloadFile = () => {
     const link = document.createElement("a");
