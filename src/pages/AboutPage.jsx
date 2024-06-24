@@ -11,7 +11,7 @@ export default function AboutPage() {
       />
       <p className="text-wrap fs-3">
         I started my Software Development journey in June of 2023. I have a
-        background in Automotive Systems Technology and I am currently enrolled
+        background in Automotive Systems Technology and currently enrolled
         in the Full Stack Web Development program at UNC Chapel Hill.
       </p>
       <p className="text-wrap fs-3">
