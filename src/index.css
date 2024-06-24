@@ -29,11 +29,14 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #0E131F;
+  color: #8B939C;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #59546C;
 }
 
 button {
@@ -53,6 +56,11 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.list-group-item{
+  background-color: #0E131F;
+  color: #7692FF;
 }
 
 @media (prefers-color-scheme: light) {

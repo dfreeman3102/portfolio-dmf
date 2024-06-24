@@ -11,7 +11,7 @@ export default function ResumePage() {
   return (
     <div>
      
-      <button className="btn btn-primary fs-4" onClick={downloadFile}>
+      <button className="btn btn-outline-dark text-light fs-4" onClick={downloadFile}>
         Download my Resume Here!
       </button>
 
