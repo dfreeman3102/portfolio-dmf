@@ -48,7 +48,7 @@ export default function ContactPage() {
                     onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
 
-                <button className='btn btn-dark fs-3'type="submit">Submit</button>
+                <button className='btn btn-outline-secondary fs-5'type="submit">Submit</button>
             </form>
         </div>
     );
